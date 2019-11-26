@@ -38,7 +38,6 @@
             this.teamoneScorelabel = new System.Windows.Forms.Label();
             this.teamOneScoreValue = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.teamTwoScoreText = new System.Windows.Forms.TextBox();
             this.teamTwoName = new System.Windows.Forms.Label();
             this.teamTwoScorelabel = new System.Windows.Forms.Label();
@@ -135,13 +134,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "<team one>";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(467, 164);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 35);
-            this.textBox1.TabIndex = 8;
-            // 
             // teamTwoScoreText
             // 
             this.teamTwoScoreText.Location = new System.Drawing.Point(467, 262);
@@ -196,7 +188,6 @@
             this.Controls.Add(this.teamTwoScoreText);
             this.Controls.Add(this.teamTwoName);
             this.Controls.Add(this.teamTwoScorelabel);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.teamOneScoreValue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.teamoneScorelabel);
@@ -229,7 +220,6 @@
         private System.Windows.Forms.Label teamoneScorelabel;
         private System.Windows.Forms.TextBox teamOneScoreValue;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox teamTwoScoreText;
         private System.Windows.Forms.Label teamTwoName;
         private System.Windows.Forms.Label teamTwoScorelabel;
