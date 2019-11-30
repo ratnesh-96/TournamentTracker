@@ -27,7 +27,7 @@ namespace TrackerLibrary.DataAccess
             throw new NotImplementedException();
         }
 
-        public TournamentModel CreateTournament(TournamentModel model)
+        public void CreateTournament(TournamentModel model)
         {
             throw new NotImplementedException();
         }
