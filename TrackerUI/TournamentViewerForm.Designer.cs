@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.TournamentName = new System.Windows.Forms.Label();
+            this.tournamentName = new System.Windows.Forms.Label();
             this.Roundlabel = new System.Windows.Forms.Label();
             this.roundDropDown = new System.Windows.Forms.ComboBox();
             this.unplayedOnlyCheckbox = new System.Windows.Forms.CheckBox();
@@ -53,16 +53,15 @@
             this.label1.Size = new System.Drawing.Size(129, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tournament:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // TournamentName
+            // tournamentName
             // 
-            this.TournamentName.AutoSize = true;
-            this.TournamentName.Location = new System.Drawing.Point(147, 0);
-            this.TournamentName.Name = "TournamentName";
-            this.TournamentName.Size = new System.Drawing.Size(88, 30);
-            this.TournamentName.TabIndex = 1;
-            this.TournamentName.Text = "<none>";
+            this.tournamentName.AutoSize = true;
+            this.tournamentName.Location = new System.Drawing.Point(147, 0);
+            this.tournamentName.Name = "tournamentName";
+            this.tournamentName.Size = new System.Drawing.Size(88, 30);
+            this.tournamentName.TabIndex = 1;
+            this.tournamentName.Text = "<none>";
             // 
             // Roundlabel
             // 
@@ -80,6 +79,7 @@
             this.roundDropDown.Name = "roundDropDown";
             this.roundDropDown.Size = new System.Drawing.Size(177, 38);
             this.roundDropDown.TabIndex = 3;
+            this.roundDropDown.SelectedIndexChanged += new System.EventHandler(this.roundDropDown_SelectedIndexChanged);
             // 
             // unplayedOnlyCheckbox
             // 
@@ -196,13 +196,12 @@
             this.Controls.Add(this.unplayedOnlyCheckbox);
             this.Controls.Add(this.roundDropDown);
             this.Controls.Add(this.Roundlabel);
-            this.Controls.Add(this.TournamentName);
+            this.Controls.Add(this.tournamentName);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "TournamentViewerForm";
             this.Text = "Tournament Viewer";
-            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,7 +210,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label TournamentName;
+        private System.Windows.Forms.Label tournamentName;
         private System.Windows.Forms.Label Roundlabel;
         private System.Windows.Forms.ComboBox roundDropDown;
         private System.Windows.Forms.CheckBox unplayedOnlyCheckbox;

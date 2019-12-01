@@ -21,5 +21,7 @@ namespace TrackerLibrary
         /// </summary>
         public MatchupModel ParentMatchup { get; set; }
         public int Id { get; set; }
+        public int TeamCompetingId { get; set; }
+        public int ParentMatchupId { get; set; }
     }
 }
